@@ -1,0 +1,12 @@
+.site-footer {
+    background-color: $bg-color-dark;
+    height: $footer-height;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    section {        
+        max-width: $max-width-page;
+        margin: 0 auto;
+    }
+}

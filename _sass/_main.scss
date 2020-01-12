@@ -1,0 +1,32 @@
+body {
+  font-family: $font-primary;
+  background-color: $bg-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+      color: $primary-color-alt;
+    }
+  }
+  
+  main {
+    background-color: $bg-color-light;
+    max-width: $max-width-page;
+    margin: 0 auto;
+    padding: 10px;    
+  }
+}
+
+.site-ul {
+  list-style: none;
+}
+
+.ul-tags {
+    li {
+        display: inline-block;
+    }
+}

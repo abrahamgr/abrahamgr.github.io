@@ -1,0 +1,22 @@
+.site-header {
+    background-color: $bg-color-dark;
+    padding: 0 20px;
+    height: $header-height;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+
+    .site-logo {
+        display: inline-block;
+        padding: 0 90px;
+    }
+
+    .site-navigation {
+        display: inline-block;
+        
+        a {
+            padding: 0 7px;
+        }
+    }
+}

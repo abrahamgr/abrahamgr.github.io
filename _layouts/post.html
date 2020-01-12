@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article>
+    <h1>{{ page.title }}</h1>
+    <!-- <p>{{ page.date | date_to_string }} - {{ page.author }}</p> -->
+    <p>
+        {{ page.date | date_to_string }}
+        {% assign author = site.authors | where: 'short_name', page.author | first %}
+        {% if author %}
+            - <span>{{ author.name }}</span>
+        {% endif %}
+    </p>
+    {{ content }}
+    <div>
+        <span>Tags:</span>        
+        {% for tag in page.tags %}
+            {% assign tagItem = site.tags | where: 'short_name', tag | first %}
+            {% if tagItem %}
+                <a href="{{ tagItem.url }}">{{ tagItem.short_name }}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</article>
