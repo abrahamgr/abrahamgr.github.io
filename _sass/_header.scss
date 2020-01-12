@@ -1,22 +1,57 @@
+$padding-header: 30px;
+
 .site-header {
     background-color: $bg-color-dark;
-    padding: 0 20px;
-    height: $header-height;
-    display: flex;
     align-items: center;
     font-size: 20px;
     font-weight: 600;
 
     .site-logo {
         display: inline-block;
-        padding: 0 90px;
+        padding: $padding-header;
+        @media only screen and (max-width: $medium){
+            padding: $padding-header 10px;            
+        }
+    }
+    .hamburguer {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        padding: $padding-header 10px;
+
+        @media only screen and (max-width: $medium){
+            display: inline-block;
+        }
     }
 
     .site-navigation {
         display: inline-block;
-        
+        @media only screen and (max-width: $medium){
+            display: none;    
+        }
+
+        li {
+            display: inline-block;
+            @media only screen and (max-width: $medium){
+                display: block;
+                padding: 10px;
+                border-width: 1px 0 0 0;
+                border-style: solid;
+                border-color: $border-color;
+                &:hover {
+                    background-color: $bg-color;
+                }
+            }
+        }
+
         a {
-            padding: 0 7px;
+            display: block;
+        };
+    }
+    .nav-show {
+        @media only screen and (max-width: $medium){
+            display: block;
         }
     }
 }
