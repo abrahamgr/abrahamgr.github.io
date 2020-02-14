@@ -16,12 +16,23 @@ body {
       color: $primary-color-alt;
     }
   }
+  p {    
+    color: $text-color-alt;
+  }
   
   main {
     background-color: $bg-color-light;
     max-width: $max-width-page;
     margin: 0 auto;
-    padding: 10px;    
+    padding: 30px 60px;
+    -webkit-box-shadow: 0px 0px 20px 8px $bg-color-dark;
+    -moz-box-shadow: 0px 0px 20px 8px $bg-color-dark;
+    box-shadow: 0px 0px 20px 8px $bg-color-dark;
+  }
+  .home {
+    max-width: 100%;
+    margin: 0;
+
   }
 }
 

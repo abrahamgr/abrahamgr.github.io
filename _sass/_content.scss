@@ -1,23 +1,5 @@
 
   main {
-    @media only screen and (min-height: 400px) {
-        min-height: 200px;
-    }
-    @media only screen and (min-height: 500px) {
-        min-height: 300px;
-    }
-    @media only screen and (min-height: 600px) {
-        min-height: 400px;
-    }
-    @media only screen and (min-height: 700px) {
-        min-height: 560px;
-    }
-    a {
-        color: $primary-color;
-        &:hover {
-        color: $primary-color-alt;
-        }
-    }
     .title {
         a {
             color: inherit;
