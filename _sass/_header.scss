@@ -7,7 +7,7 @@
 
     .site-logo {
         display: inline-block;
-        padding: $padding-header;
+        padding: 50px $padding-header;
         @media only screen and (max-width: $medium){
             padding: $padding-header 10px;            
         }
